@@ -300,6 +300,7 @@ function endGame() {
    ======================================================= */
 
 function restartGame() {
+    clearInterval(timerInterval);
     currentScore = 0;
     currentQuestionIndex = 0;
     showScreen("introScreen");
