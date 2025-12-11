@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧮 Math Quiz Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="game.js"></script>
+</head>
+
+<body>
+    <!-- Intro Screen -->
+    <div id="introScreen" class="screen visible">
+        <h1 class="title">🧮 Math Quiz Challenge 🧮</h1>
+        <p class="subtitle">Test Your Math Skills!</p>
+
+        <div class="nickname-entry">
+            <input id="playerNameInput" type="text" placeholder="Enter your name…" />
+            <button id="startGameBtn">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Main Game Screen -->
+    <div id="gameScreen" class="screen hidden">
+        <div class="header">
+            <div class="playerTag"><span id="playerNameLabel"></span></div>
+            <div class="timerBox">
+                <span id="timer">20</span>s
+            </div>
+            <div class="scoreBox">Score: <span id="currentScore">0</span></div>
+        </div>
+
+        <h2 id="questionText"></h2>
+
+        <div id="answersContainer"></div>
+
+        <div class="controls">
+            <button id="skipBtn">Skip Question</button>
+        </div>
+
+        <div id="rationaleBox" class="hidden"></div>
+
+        <button id="nextBtn" class="hidden">Next Question</button>
+    </div>
+
+    <!-- Final Score Screen -->
+    <div id="finalScreen" class="screen hidden">
+        <h1>🏆 Quiz Complete!</h1>
+        <p>Your Score: <span id="finalScore"></span></p>
+        <p id="finalMessage"></p>
+
+        <button id="restartGameBtn">Play Again</button>
+    </div>
+
+</body>
+</html>

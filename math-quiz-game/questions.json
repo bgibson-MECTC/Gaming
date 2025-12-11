@@ -1,0 +1,112 @@
+[
+    {
+        "question": "What is 15 + 27?",
+        "answers": [
+            { "text": "40", "correct": false },
+            { "text": "42", "correct": true },
+            { "text": "44", "correct": false },
+            { "text": "46", "correct": false }
+        ],
+        "rationale": "15 + 27 = 42. Add the ones place (5 + 7 = 12, carry 1) and tens place (1 + 2 + 1 = 4).",
+        "points": 100
+    },
+    {
+        "question": "What is 8 × 7?",
+        "answers": [
+            { "text": "54", "correct": false },
+            { "text": "56", "correct": true },
+            { "text": "58", "correct": false },
+            { "text": "60", "correct": false }
+        ],
+        "rationale": "8 × 7 = 56. This is a multiplication table fact.",
+        "points": 100
+    },
+    {
+        "question": "What is 100 - 37?",
+        "answers": [
+            { "text": "61", "correct": false },
+            { "text": "62", "correct": false },
+            { "text": "63", "correct": true },
+            { "text": "64", "correct": false }
+        ],
+        "rationale": "100 - 37 = 63. Subtract from 100 by borrowing.",
+        "points": 100
+    },
+    {
+        "question": "What is 144 ÷ 12?",
+        "answers": [
+            { "text": "10", "correct": false },
+            { "text": "11", "correct": false },
+            { "text": "12", "correct": true },
+            { "text": "13", "correct": false }
+        ],
+        "rationale": "144 ÷ 12 = 12. Think: 12 × 12 = 144.",
+        "points": 100
+    },
+    {
+        "question": "What is 9 × 9?",
+        "answers": [
+            { "text": "72", "correct": false },
+            { "text": "81", "correct": true },
+            { "text": "90", "correct": false },
+            { "text": "99", "correct": false }
+        ],
+        "rationale": "9 × 9 = 81. This is a perfect square.",
+        "points": 100
+    },
+    {
+        "question": "What is 56 + 48?",
+        "answers": [
+            { "text": "102", "correct": false },
+            { "text": "103", "correct": false },
+            { "text": "104", "correct": true },
+            { "text": "105", "correct": false }
+        ],
+        "rationale": "56 + 48 = 104. Add the ones (6 + 8 = 14, carry 1) and tens (5 + 4 + 1 = 10).",
+        "points": 100
+    },
+    {
+        "question": "What is 13 × 5?",
+        "answers": [
+            { "text": "60", "correct": false },
+            { "text": "65", "correct": true },
+            { "text": "70", "correct": false },
+            { "text": "75", "correct": false }
+        ],
+        "rationale": "13 × 5 = 65. Multiply 13 by 5.",
+        "points": 100
+    },
+    {
+        "question": "What is 91 - 28?",
+        "answers": [
+            { "text": "61", "correct": false },
+            { "text": "62", "correct": false },
+            { "text": "63", "correct": true },
+            { "text": "64", "correct": false }
+        ],
+        "rationale": "91 - 28 = 63. Subtract by borrowing from the tens place.",
+        "points": 100
+    },
+    {
+        "question": "What is 72 ÷ 9?",
+        "answers": [
+            { "text": "6", "correct": false },
+            { "text": "7", "correct": false },
+            { "text": "8", "correct": true },
+            { "text": "9", "correct": false }
+        ],
+        "rationale": "72 ÷ 9 = 8. Think: 9 × 8 = 72.",
+        "points": 100
+    },
+    {
+        "question": "What is 6 × 12?",
+        "answers": [
+            { "text": "68", "correct": false },
+            { "text": "70", "correct": false },
+            { "text": "72", "correct": true },
+            { "text": "74", "correct": false }
+        ],
+        "rationale": "6 × 12 = 72. Multiply 6 by 12.",
+        "points": 100
+    }
+]
