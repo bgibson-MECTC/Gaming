@@ -1,0 +1,284 @@
+/* ===========================
+   GLOBAL THEME
+   =========================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Hide screens by default */
+.screen {
+    display: none;
+    padding: 20px;
+    animation: fadeIn 0.6s ease-in-out;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.screen.visible {
+    display: block;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===========================
+   TITLE STYLING
+   =========================== */
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* ===========================
+   NICKNAME ENTRY
+   =========================== */
+
+.nickname-entry {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nickname-entry input {
+    padding: 15px;
+    font-size: 1.1rem;
+    width: 300px;
+    max-width: 90%;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.nickname-entry button {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nickname-entry button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   GAME HEADER
+   =========================== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.playerTag {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.timerBox {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background: rgba(255, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.scoreBox {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background: rgba(0, 255, 0, 0.3);
+    border-radius: 8px;
+}
+
+/* ===========================
+   QUESTION STYLING
+   =========================== */
+
+#questionText {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* ===========================
+   ANSWERS
+   =========================== */
+
+#answersContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.answer-btn {
+    padding: 20px;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+.answer-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(10px);
+}
+
+.answer-btn.correct {
+    background: rgba(0, 255, 0, 0.4);
+    border-color: #4CAF50;
+}
+
+.answer-btn.incorrect {
+    background: rgba(255, 0, 0, 0.4);
+    border-color: #f44336;
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* ===========================
+   CONTROLS
+   =========================== */
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.controls button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.controls button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ===========================
+   RATIONALE BOX
+   =========================== */
+
+#rationaleBox {
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #4CAF50;
+    border-radius: 8px;
+}
+
+/* ===========================
+   NEXT BUTTON
+   =========================== */
+
+#nextBtn, #restartGameBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#nextBtn:hover, #restartGameBtn:hover {
+    background: #1976D2;
+    transform: scale(1.05);
+}
+
+/* ===========================
+   FINAL SCREEN
+   =========================== */
+
+#finalScreen {
+    text-align: center;
+}
+
+#finalScreen h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+#finalScreen p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+#finalScore {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #questionText {
+        font-size: 1.2rem;
+    }
+    
+    .answer-btn {
+        font-size: 1rem;
+    }
+}
